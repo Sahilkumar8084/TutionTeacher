@@ -1,7 +1,9 @@
-
-
-function App() {
-  return <h1>Hello </h1>;
+import { useState } from "react";
+import LearningWorkspace from "./pages/LearningWorkspace.jsx";
+export default function App() {
+  return (
+    <>
+      <LearningWorkspace />
+    </>
+  );
 }
-
-export default App;
