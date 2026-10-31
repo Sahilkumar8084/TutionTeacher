@@ -6,6 +6,8 @@ import Explanation from "./Explanation.jsx";
 import Controls from "./Controls.jsx";
 import Microphone from "./Microphone.jsx";
 import Sidebar from "./Sidebar.jsx";
+import AppName from "./AppName.jsx";
+import UserHistory from "./UserHistory.jsx";
 export {
   AskForm,
   BoardCanvas,
@@ -15,4 +17,6 @@ export {
   Controls,
   Microphone,
   Sidebar,
+  AppName,
+  UserHistory
 };

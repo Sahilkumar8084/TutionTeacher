@@ -49,14 +49,14 @@ export default function AskForm({ onAsk }) {
           maxLength={MAX_CHARS}
           disabled={isLoading}
           placeholder="Ask anything about Physics or Chemistry..."
-          className="textarea textarea-bordered w-full h-32 resize-none pb-8 hover:none"
+          className="textarea w-full h-25 resize-none rounded-xl bg-base-200 pb-8 focus:border-primary focus:outline-2 focus:outline-primary/30"
         />
         <span className="absolute bottom-2 right-3 text-xs opacity-50">
           {question.length}/{MAX_CHARS}
         </span>
       </div>
-
-      <label className="select w-full">
+   <div className="flex gap-2">
+      <label className="select  rounded-xl bg-base-200">
         <Languages className="size-4 opacity-70" />
         <select
           value={language}
@@ -71,15 +71,15 @@ export default function AskForm({ onAsk }) {
       <button
         type="submit"
         disabled={isLoading || !question.trim()}
-        className="btn btn-primary w-full"
+        className="btn btn-primary  rounded-xl shadow-md"
       >
         {isLoading ? (
           <span className="loading loading-spinner loading-sm" />
         ) : (
           <Sparkles size={16}/>
         )}
-        {isLoading ? "AI soch raha hai..." : "Generate"}
-      </button>
+        {isLoading ? "Thinking..." : "Generate"}
+      </button></div>
     </form>
   );
 }
